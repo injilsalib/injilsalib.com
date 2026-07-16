@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>injilsalib.com | Deployment in Progress</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0d1117;
+    color:#00ff88;
+    font-family:Consolas,Monaco,monospace;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.terminal{
+    width:100%;
+    max-width:760px;
+    background:#161b22;
+    border:1px solid #30363d;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+}
+
+.titlebar{
+    background:#21262d;
+    padding:12px 16px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    border-bottom:1px solid #30363d;
+}
+
+.dot{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+}
+
+.red{background:#ff5f56;}
+.yellow{background:#ffbd2e;}
+.green{background:#27c93f;}
+
+.title{
+    margin-left:10px;
+    color:#c9d1d9;
+    font-size:14px;
+}
+
+.content{
+    padding:24px;
+    line-height:1.8;
+    font-size:15px;
+}
+
+.prompt::before{
+    content:"root@injilsalib:~$ ";
+    color:#58a6ff;
+}
+
+.blink{
+    display:inline-block;
+    width:8px;
+    height:18px;
+    background:#00ff88;
+    animation:blink 1s infinite;
+    vertical-align:middle;
+}
+
+@keyframes blink{
+    50%{
+        opacity:0;
+    }
+}
+
+.footer{
+    margin-top:25px;
+    color:#8b949e;
+    font-size:14px;
+}
+</style>
+</head>
+<body>
+
+<div class="terminal">
+
+    <div class="titlebar">
+        <div class="dot red"></div>
+        <div class="dot yellow"></div>
+        <div class="dot green"></div>
+        <div class="title">Terminal — injilsalib.com</div>
+    </div>
+
+    <div class="content">
+
+<div class="prompt">systemctl status website</div>
+
+<br>
+
+Website Status : <strong>DEPLOYMENT IN PROGRESS...</strong><br>
+Repository      : GitHub<br>
+Hosting         : Cloudflare Pages<br>
+Domain          : injilsalib.com<br>
+SSL             : Configuring...<br>
+Deployment      : Initializing...<br>
+
+<br>
+
+<div class="prompt">cat information.txt</div>
+
+<br>
+
+Terima kasih telah berkunjung.<br>
+Website <strong>injilsalib.com</strong> sedang dalam proses pengembangan dan deployment.<br>
+Silakan kembali beberapa saat lagi.
+
+<div class="footer">
+Founder / CEO : <strong>Jaminsen Manullang</strong><br>
+© 2026 injilsalib.com
+</div>
+
+<br>
+
+<div class="prompt"><span class="blink"></span></div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
