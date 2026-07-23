@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Jaminsen Manullang",
+    "role": "Project Owner",
+    "image": "https://www.injilsalib.com/img/1234920_4584515550791_491666436_n.jpg",
+    "text": "Kerinduan kami adalah menghadirkan InjilSalib.com sebagai media digital yang membagikan kasih Tuhan Yesus Kristus kepada setiap orang.",
+    "link": "#"
+  },
+  {
+    "name": "Samuel Pasaribu",
+    "role": "Web Developer",
+    "image": "https://samuel.haxorai.com/img/samuelpasaribu.webp",
+    "text": "Website ini dirancang sederhana, cepat, dan mudah digunakan agar Firman Tuhan dapat diakses oleh siapa saja.",
+    "link": "https://samuel.haxorai.com"
+  },
+  {
+    "name": "Wilson Pasaribu",
+    "role": "Investment Partner",
+    "image": "https://www.injilsalib.com/img/698876247_27051425737786634_3568958102322783930_n.jpg",
+    "text": "Kami percaya teknologi dapat menjadi sarana untuk menghadirkan pengharapan dan memperluas pemberitaan Injil kepada lebih banyak orang.",
+    "link": "#"
+  }
+]
