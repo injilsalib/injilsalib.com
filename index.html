@@ -1,143 +1,846 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>injilsalib.com | Deployment in Progress</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    background:#0d1117;
-    color:#00ff88;
-    font-family:Consolas,Monaco,monospace;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-    padding:20px;
-}
-
-.terminal{
-    width:100%;
-    max-width:760px;
-    background:#161b22;
-    border:1px solid #30363d;
-    border-radius:10px;
-    overflow:hidden;
-    box-shadow:0 15px 40px rgba(0,0,0,.35);
-}
-
-.titlebar{
-    background:#21262d;
-    padding:12px 16px;
-    display:flex;
-    align-items:center;
-    gap:8px;
-    border-bottom:1px solid #30363d;
-}
-
-.dot{
-    width:12px;
-    height:12px;
-    border-radius:50%;
-}
-
-.red{background:#ff5f56;}
-.yellow{background:#ffbd2e;}
-.green{background:#27c93f;}
-
-.title{
-    margin-left:10px;
-    color:#c9d1d9;
-    font-size:14px;
-}
-
-.content{
-    padding:24px;
-    line-height:1.8;
-    font-size:15px;
-}
-
-.prompt::before{
-    content:"root@injilsalib:~$ ";
-    color:#58a6ff;
-}
-
-.blink{
-    display:inline-block;
-    width:8px;
-    height:18px;
-    background:#00ff88;
-    animation:blink 1s infinite;
-    vertical-align:middle;
-}
-
-@keyframes blink{
-    50%{
-        opacity:0;
-    }
-}
-
-.footer{
-    margin-top:25px;
-    color:#8b949e;
-    font-size:14px;
-}
-</style>
+    <title>InjilSalib.com - Alkitab Online</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google" content="notranslate" />
+    <meta name="author" content="Samuel Pasaribu" />
+    <meta name="description" content="InjilSalib.com adalah platform Alkitab Online untuk mencari ayat Alkitab, membaca Firman Tuhan, menemukan renungan Kristen, belajar iman, dan mengenal kasih Tuhan Yesus Kristus melalui teknologi digital." />
+    <meta name="keywords" content="Alkitab Online, cari ayat Alkitab, baca Alkitab online, Firman Tuhan, ayat Alkitab Kristen, renungan Kristen, doa Kristen, belajar Alkitab, apologetika Kristen, Injil Yesus Kristus, Tuhan Yesus" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="Googlebot-Image" content="follow, all" />
+    <meta property="og:title" content="InjilSalib.com - Alkitab Online" />
+    <meta property="og:url" content="https://www.injilsalib.com/" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="InjilSalib.com" />
+    <meta property="og:image" content="https://www.injilsalib.com/thumbnail.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="https://www.injilsalib.com/favicon.ico" />
+    <link rel="icon" type="image/png" href="https://www.injilsalib.com/icon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.injilsalib.com/icon.png" />
+    <link rel="apple-touch-icon" href="https://www.injilsalib.com/apple-touch-icon.png" />
+    <link rel="canonical" href="https://www.injilsalib.com/" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js" defer></script>
 </head>
+
 <body>
 
-<div class="terminal">
+    <header>
 
-    <div class="titlebar">
-        <div class="dot red"></div>
-        <div class="dot yellow"></div>
-        <div class="dot green"></div>
-        <div class="title">Terminal — injilsalib.com</div>
+        <div class="container">
+
+            <nav>
+
+                <div class="logo">
+                    Injil<span>Salib.com</span>
+                </div>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="menu" id="menu">
+
+                    <a href="#" data-target="beranda">
+                        Beranda
+                    </a>
+
+                    <a href="#" data-target="renungan">
+                        Renungan
+                    </a>
+
+                    <a href="#" data-target="apologetika">
+                        Apologetika
+                    </a>
+
+                    <a href="#" data-target="contributors">
+                        Contributors
+                    </a>
+
+                    <a href="#" data-target="tech">
+                        Tech
+                    </a>
+
+                    <a href="#" data-target="hubungi">
+                        Hubungi
+                    </a>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <section class="hero" id="beranda">
+
+        <div class="container hero-wrap">
+
+            <div>
+
+                <h1>
+                    Kasih Tuhan Mengubah Hidup
+                </h1>
+
+                <p>
+                    Selamat datang di InjilSalib.com.
+                    Sebuah tempat sederhana untuk mengenal kasih Tuhan Yesus Kristus melalui Firman Tuhan, doa, renungan, dan pengharapan.
+                </p>
+
+                <a href="https://blog.injilsalib.com" class="btn btn-primary">
+                    Mulai Membaca
+                </a>
+
+            </div>
+
+            <div class="hero-card">
+
+                <h3>Kitab Suci</h3>
+
+                <p id="dailyVerse">
+                    Memuat Firman Tuhan...
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="renungan">
+
+        <div class="container">
+
+            <div class="title premium-title">
+
+                <div class="title-line">
+
+                    <span></span>
+
+                    <h2>
+                        Renungan Terbaru
+                    </h2>
+
+                    <span></span>
+
+                </div>
+
+
+                <p>
+                    Artikel terbaru dari <strong>blog.injilsalib.com</strong> untuk menguatkan iman dan kehidupan sehari-hari.
+                </p>
+
+            </div>
+
+
+            <div class="grid" id="blogPosts">
+
+
+                <div class="blog-card skeleton-card">
+
+                    <div class="skeleton skeleton-image"></div>
+
+                    <div class="blog-content">
+
+
+                        <div class="blog-author">
+
+                            <div class="skeleton skeleton-avatar"></div>
+
+                            <div>
+
+                                <div class="skeleton skeleton-name"></div>
+
+                                <div class="skeleton skeleton-date"></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skeleton skeleton-title"></div>
+
+                        <div class="skeleton skeleton-text"></div>
+
+                        <div class="skeleton skeleton-text short"></div>
+
+
+                        <div class="skeleton skeleton-button"></div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="blog-card skeleton-card">
+
+                    <div class="skeleton skeleton-image"></div>
+
+                    <div class="blog-content">
+
+
+                        <div class="blog-author">
+
+                            <div class="skeleton skeleton-avatar"></div>
+
+                            <div>
+
+                                <div class="skeleton skeleton-name"></div>
+
+                                <div class="skeleton skeleton-date"></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skeleton skeleton-title"></div>
+
+                        <div class="skeleton skeleton-text"></div>
+
+                        <div class="skeleton skeleton-text short"></div>
+
+
+                        <div class="skeleton skeleton-button"></div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="blog-card skeleton-card">
+
+                    <div class="skeleton skeleton-image"></div>
+
+                    <div class="blog-content">
+
+
+                        <div class="blog-author">
+
+                            <div class="skeleton skeleton-avatar"></div>
+
+                            <div>
+
+                                <div class="skeleton skeleton-name"></div>
+
+                                <div class="skeleton skeleton-date"></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skeleton skeleton-title"></div>
+
+                        <div class="skeleton skeleton-text"></div>
+
+                        <div class="skeleton skeleton-text short"></div>
+
+
+                        <div class="skeleton skeleton-button"></div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section id="apologetika">
+
+        <div class="container">
+
+            <div class="title premium-title">
+
+                <div class="title-line">
+
+                    <span></span>
+
+                    <h2>
+                        Renungan Terpopuler
+                    </h2>
+
+                    <span></span>
+
+                </div>
+
+
+                <p>Jelajahi artikel pilihan yang banyak dibaca & ditonton oleh komunitas InjilSalib.com untuk menemukan inspirasi iman, penguatan hati, dan kebenaran Firman Tuhan.</p>
+
+            </div>
+
+            <div class="service-layout">
+
+                <!-- KIRI -->
+                <div class="service-main">
+
+                    <div class="video-card">
+
+                        <h3 id="videoSection" class="sidebar-title-icon">
+                            Video Apologetika Kristen
+                        </h3>
+
+                        <div class="video-wrapper">
+
+
+<iframe id="mainVideo"
+src="https://www.youtube.com/embed/sFdW0idDdgw?enablejsapi=1"
+title="Renungan Kristen - Firman Tuhan"
+loading="lazy"
+referrerpolicy="strict-origin-when-cross-origin"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+allowfullscreen>
+</iframe>
+
+
+                        </div>
+
+
+                        <p id="videoDescription">
+
+                            Inti dari Injil Perjanjian Baru adalah bahwa Yesus adalah Putra Allah yang ilahi, yang mati di kayu salib untuk dosa-dosa dan bangkit dari kematian.
+
+                        </p>
+
+
+
+                        <div class="video-list" id="videoList">
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <!-- KANAN -->
+                <aside class="sidebar">
+
+                    <div class="sidebar-card">
+
+                        <h3 class="sidebar-title-icon">
+                            Postingan Populer
+                        </h3>
+
+
+                        <div id="popularPosts">
+
+
+                            <div class="popular-skeleton">
+
+
+                                <div class="popular-skeleton-item">
+
+                                    <div class="skeleton popular-skeleton-thumb"></div>
+
+                                    <div class="popular-skeleton-content">
+
+                                        <div class="skeleton popular-skeleton-title"></div>
+
+                                        <div class="skeleton popular-skeleton-date"></div>
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="popular-skeleton-item">
+
+                                    <div class="skeleton popular-skeleton-thumb"></div>
+
+                                    <div class="popular-skeleton-content">
+
+                                        <div class="skeleton popular-skeleton-title"></div>
+
+                                        <div class="skeleton popular-skeleton-date"></div>
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="popular-skeleton-item">
+
+                                    <div class="skeleton popular-skeleton-thumb"></div>
+
+                                    <div class="popular-skeleton-content">
+
+                                        <div class="skeleton popular-skeleton-title"></div>
+
+                                        <div class="skeleton popular-skeleton-date"></div>
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="popular-skeleton-item">
+
+                                    <div class="skeleton popular-skeleton-thumb"></div>
+
+                                    <div class="popular-skeleton-content">
+
+                                        <div class="skeleton popular-skeleton-title"></div>
+
+                                        <div class="skeleton popular-skeleton-date"></div>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="sidebar-card">
+
+                        <h3 class="sidebar-title-icon">
+                            Kategori Renungan
+                        </h3>
+
+
+                        <div id="blogLabels">
+
+
+                            <div class="label-skeleton">
+
+
+                                <div class="skeleton label-pill"></div>
+
+                                <div class="skeleton label-pill"></div>
+
+                                <div class="skeleton label-pill small"></div>
+
+                                <div class="skeleton label-pill"></div>
+
+                                <div class="skeleton label-pill small"></div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="sidebar-card">
+
+                        <h3 class="sidebar-title-icon">
+                            Contributors
+                        </h3>
+
+
+                        <div id="blogInfo">
+
+
+                            <div class="info-skeleton">
+
+                                <div class="skeleton skeleton-text"></div>
+
+                                <div class="skeleton skeleton-text short"></div>
+
+                                <div class="skeleton skeleton-text"></div>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="verse" id="contributors">
+
+        <div class="container">
+
+            <div class="verse-slider">
+
+                <div class="verse-track" id="verseTrack"></div>
+
+                <div class="verse-dots" id="verseDots"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="tech">
+
+        <div class="container">
+
+            <div class="title premium-title">
+
+                <div class="title-line">
+
+                    <span></span>
+
+                    <h2>
+                        Teknologi
+                    </h2>
+
+                    <span></span>
+
+                </div>
+
+
+                <p>Membantu orang percaya bertumbuh dalam iman, mengembangkan talenta, dan mengubah hobi menjadi penghasilan melalui karya digital yang bernilai, kreatif, serta membawa dampak positif bagi banyak orang dan kemuliaan Tuhan.</p>
+
+            </div>
+
+
+            <div class="grid">
+
+
+                <div class="card">
+
+                    <div class="icon icon-love"></div>
+
+                    <h3>
+                        Hidup Dalam Iman
+                    </h3>
+
+                    <p>
+                        Mengenal Tuhan lebih dalam melalui Firman, doa, dan karakter yang diperbarui agar setiap pekerjaan dilakukan dengan nilai kebenaran dan kasih.
+                    </p>
+
+                </div>
+
+
+
+                <div class="card">
+
+                    <div class="icon icon-book"></div>
+
+                    <h3>
+                        Menulis & Membagikan Firman
+                    </h3>
+
+                    <p>
+                        Belajar menulis blog, membuat artikel, dan membagikan pengalaman iman agar kebenaran Tuhan dapat menjangkau lebih banyak orang melalui dunia digital.
+                    </p>
+
+                </div>
+
+
+
+                <div class="card">
+
+                    <div class="icon icon-pray"></div>
+
+                    <h3>
+                        Coding & Pekerjaan Digital
+                    </h3>
+
+                    <p>
+                        Mengembangkan keterampilan teknologi seperti coding dan website untuk membangun pelayanan digital sekaligus membuka peluang penghasilan yang jujur dan kreatif.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="cta" id="hubungi">
+
+        <div class="container">
+
+            <div class="title premium-title">
+
+                <div class="title-line">
+
+                    <span></span>
+
+                    <h2>
+                        Hubungi Kami
+                    </h2>
+
+                    <span></span>
+
+                </div>
+
+
+                <p>Kami percaya setiap orang berhak mengenal kasih Tuhan Yesus Kristus. Apabila Anda memiliki pertanyaan, membutuhkan dukungan doa, atau ingin bersekutu bersama, silakan menghubungi kami.</p>
+
+            </div>
+
+            <div class="contact-layout">
+
+                <div class="contact-map">
+
+                    <iframe src="https://maps.google.com/maps?q=Indonesia&t=&z=5&ie=UTF8&iwloc=&output=embed" loading="lazy" allowfullscreen>
+                    </iframe>
+
+                </div>
+
+                <div class="contact-card">
+
+                    <h3>InjilSalib.com</h3>
+
+                    <p class="contact-desc">
+                        Media pelayanan digital untuk membagikan Injil, renungan, doa, dan pengajaran Firman Tuhan agar semakin banyak orang mengenal kasih Tuhan Yesus Kristus.
+                    </p>
+
+                    <div class="contact-item">
+                        <span class="contact-icon icon-email"></span>
+                        <div>
+                            <strong>Email</strong>
+                            <p>
+                                <a href="mailto:injilsalib@gmail.com">
+                                    injilsalib@gmail.com
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="contact-icon icon-web"></span>
+                        <div>
+                            <strong>Website</strong>
+                            <p>www.injilsalib.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="contact-icon icon-location"></span>
+                        <div>
+                            <strong>Lokasi Pelayanan</strong>
+                            <p>Indonesia (Online Ministry)</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="contact-icon icon-status"></span>
+                        <div>
+                            <strong>Status</strong>
+                            <p>Melayani setiap hari secara online.</p>
+                        </div>
+                    </div>
+
+                    <a class="btn btn-primary" href="mailto:injilsalib@gmail.com">
+                        Kirim Email
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- OVERLAY -->
+
+    <div class="bible-overlay" id="bibleOverlay">
+
+        <div class="bible-chat" id="bibleChat">
+
+            <div class="chat-header">
+
+                <div class="chat-brand">
+
+                    <span class="chat-title">
+                        Alkitab Online
+                    </span>
+
+                    <small id="currentLanguage">
+                        Indonesia TB
+                    </small>
+
+                </div>
+
+                <div class="chat-actions">
+
+                    <button id="languageButton" class="language-icon" title="Pilih Bahasa"></button>
+
+                    <button id="closeBible" aria-label="Tutup Alkitab"></button>
+
+                </div>
+
+            </div>
+
+            <div class="language-menu" id="languageMenu"></div>
+
+            <div class="chat-body" id="chatBody">
+
+                <div class="bot">
+
+                    <strong class="bot-title">
+                        Alkitab Online
+                    </strong>
+
+                    <span>
+                        Shalom 🙏<br>
+                        Silakan masukkan ayat Alkitab yang ingin dicari.
+                    </span>
+
+                    <br>
+
+                    <small>
+                        Contoh: Yohanes 3:16
+                    </small>
+
+                </div>
+
+            </div>
+
+            <form class="chat-input" id="bibleForm">
+
+                <input id="bibleInput" placeholder="Misal : Yohanes 3:16" required>
+
+                <button id="sendBible" class="btn" type="submit" aria-label="Kirim"></button>
+
+            </form>
+
+        </div>
+
     </div>
 
-    <div class="content">
+    <div class="voice-overlay" id="voiceOverlay">
 
-<div class="prompt">systemctl status website</div>
+        <div class="voice-modal">
 
-<br>
+            <h3>Pilih Suara</h3>
 
-Website Status : <strong>DEPLOYMENT IN PROGRESS...</strong><br>
-Repository      : GitHub<br>
-Hosting         : Cloudflare Pages<br>
-Domain          : injilsalib.com<br>
-SSL             : Configuring...<br>
-Deployment      : Initializing...<br>
-Programmer by      : Samuel Pasaribu<br>
+            <p>
+                Pilih karakter suara untuk membaca Firman Tuhan
+            </p>
 
-<br>
+            <button class="voice-option" data-gender="male">
+                Male Voice
+            </button>
 
-<div class="prompt">cat information.txt</div>
+            <button class="voice-option" data-gender="female">
+                Female Voice
+            </button>
 
-<br>
-
-Terima kasih telah berkunjung.<br>
-Website <strong>injilsalib.com</strong> sedang dalam proses pengembangan dan deployment.<br>
-Silakan kembali beberapa saat lagi.
-
-<div class="footer">
-Founder / CEO : <strong>Jaminsen Manullang</strong><br>
-© 2026 injilsalib.com
-</div>
-
-<br>
-
-<div class="prompt"><span class="blink"></span></div>
+        </div>
 
     </div>
 
-</div>
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <!-- BRAND -->
+                <div class="footer-brand">
+
+                    <div class="footer-profile">
+
+                        <img src="https://samuel.haxorai.com/img/samuelpasaribu.webp" alt="Samuel Pasaribu" class="footer-avatar" loading="lazy">
+
+                        <div>
+
+                            <h2>Samuel</h2>
+
+                            <small>Web Developer</small>
+
+                        </div>
+
+                    </div>
+
+                    <p class="fontdec">Perancang situs web di Medan, Sumatera Utara</p>
+
+                    <a href="https://samuel.haxorai.com" class="footer-badge" target="_blank" rel="noopener noreferrer"> Lihat profil lengkapku</a>
+
+                </div>
+
+                <!-- LINKS -->
+                <div class="footer-links">
+                    <h3 class="fontdec">Company</h3>
+                    <a href="#about">About Us</a>
+                    <a href="#menu">Feed</a>
+                    <a href="#gallery">Drinks</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+                <!-- SUPPORT -->
+                <div class="footer-links">
+                    <h3 class="fontdec">Support</h3>
+                    <a href="#">FAQ</a>
+                    <a href="#">Delivery Info</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms</a>
+                </div>
+
+                <!-- CTA -->
+                <div class="footer-cta">
+                    <h3 class="fontdec">Info</h3>
+                    <p class="fontdec">InjilSalib.com hadir untuk membagikan Firman Tuhan, renungan, doa, dan kabar keselamatan di dalam Tuhan Yesus Kristus sebagai sumber kasih, pengharapan, dan kehidupan.</p>
+                </div>
+
+            </div>
+
+            <!-- BOTTOM -->
+            <div class="footer-bottom">
+
+                <p class="fontdec">&copy; 2026 – <span id="currentYear"></span><a href="https://www.injilsalib.com" target="_blank" rel="noopener noreferrer"> injilsalib.com</a>. All rights reserved.</p>
+
+                <div class="footer-social">
+                    <a href="#" class="ig" aria-label="Instagram"></a>
+                    <a href="#" class="fb" aria-label="Facebook"></a>
+                    <a href="#" class="tt" aria-label="TikTok"></a>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- DONATION BUTTON -->
+
+    <a href="donasi/" class="donasi-fab" aria-label="Dukung Pelayanan Digital"></a>
+
+    <!-- FLOAT BUTTON -->
+
+    <button id="bibleButton" class="bible-fab" aria-label="Alkitab Online"></button>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="js/script.js" defer></script>
 
 </body>
+
 </html>
