@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <title>Apresiasi Developer | Samuel Pasaribu</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google" content="notranslate" />
+    <meta name="author" content="Samuel Pasaribu" />
+    <meta name="description" content="Halaman apresiasi developer Samuel Pasaribu untuk mendukung karya digital, pengembangan website profesional, pemrograman, desain sistem, dan berbagai solusi teknologi yang dibangun dengan dedikasi." />
+    <meta name="keywords" content="Samuel Pasaribu, developer Indonesia, web developer Medan, jasa pembuatan website, programmer website, pengembangan website profesional, coding website, desain web, developer freelance, dukungan developer, apresiasi karya digital, teknologi digital" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="Googlebot-Image" content="follow, all" />
+    <meta property="og:title" content="Apresiasi Developer | Samuel Pasaribu" />
+    <meta property="og:url" content="https://www.injilsalib.com/donasi" />
+    <meta property="og:description" content="Dukung karya digital Samuel Pasaribu sebagai web developer melalui apresiasi terhadap proses desain, pemrograman, pengembangan fitur, dan pemeliharaan website profesional." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="InjilSalib" />
+    <meta property="og:image" content="https://samuel.haxorai.com/img/samuelpasaribu.webp" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- CYBER MAP BACKGROUND -->
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="icon" type="image/x-icon" href="https://www.injilsalib.com/favicon.ico" />
+    <link rel="icon" type="image/png" href="https://www.injilsalib.com/icon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.injilsalib.com/icon.png" />
+    <link rel="apple-touch-icon" href="https://www.injilsalib.com/apple-touch-icon.png" />
+    <link rel="canonical" href="https://www.injilsalib.com/donasi" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js" defer></script>
+</head>
+
+<body>
+    <!-- SUPPORT ANNOUNCEMENT BAR -->
+
+    <div class="support-banner" id="supportBanner">
+
+        <div class="support-content">
+
+            <div class="support-label">
+                SUPPORT
+            </div>
+
+            <div class="support-marquee">
+
+                <div class="marquee-track">
+                    Dukung pengembangan web & app <strong>injilsalib.com</strong>.
+                    Setiap apresiasi membantu proses coding,
+                    maintenance sistem, keamanan website,
+                    dan pengembangan fitur baru.
+                </div>
+
+            </div>
+
+
+            <button class="banner-close" id="closeBanner" aria-label="Tutup informasi">
+            </button>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- BUTTON OPEN WHEN CLOSED -->
+
+    <button class="banner-open" id="openBanner" aria-label="Buka informasi">
+    </button>
+
+    <!-- CYBER MAP BACKGROUND -->
+    <canvas id="cyberMap"></canvas>
+
+    <header class="topbar">
+
+        <div class="container header-wrapper">
+
+            <div class="logo" onclick="window.location.href='../'">
+                Injil<span>Salib.com</span>
+            </div>
+
+            <a class="home-link" href="../" aria-label="Beranda"></a>
+
+        </div>
+
+    </header>
+
+    <main class="container">
+
+        <section class="profile-card">
+
+            <div class="profile-image">
+
+                <div class="image-skeleton"></div>
+
+                <img src="https://samuel.haxorai.com/img/samuelpasaribu.webp" alt="Samuel Pasaribu" loading="eager" decoding="async">
+
+            </div>
+
+            <div>
+
+                <h1>Samuel Pasaribu</h1>
+
+                <p class="role">Web Developer</p>
+
+                <p>Perancang situs web <strong>injilsalib.com</strong> di Medan, Sumatera Utara</p>
+
+                <button id="openDonation">
+
+                    Kirim Dukungan
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="wallet">
+
+            <div>
+
+                <span>Saldo Apresiasi</span>
+
+                <h2>Rp 0</h2>
+
+                <p>Belum ada kontribusi tercatat</p>
+
+            </div>
+
+            <div class="wallet-icon">$</div>
+
+        </section>
+
+        <section class="dashboard">
+
+            <div class="stat">
+
+                <h3>0</h3>
+
+                <p>Pendukung</p>
+
+            </div>
+
+            <div class="stat">
+
+                <h3>0</h3>
+
+                <p>Total Dukungan</p>
+
+            </div>
+
+            <div class="stat">
+
+                <h3>Rp 0</h3>
+
+                <p>Pembayaran</p>
+
+            </div>
+
+        </section>
+
+        <section class="faq-section">
+
+            <h2>Mengapa Dukungan Berarti?</h2>
+
+            <p class="faq-desc">Klik setiap pertanyaan di bawah ini untuk memahami proses di balik pembangunan website, waktu yang diperlukan, serta pentingnya menghargai keahlian seorang developer.</p>
+
+            <div class="faq-container">
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+
+                        Mengapa sebuah website membutuhkan waktu dan biaya?
+
+                        <span>+</span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>Domain hanyalah alamat, bukan sebuah website. Seperti tanah kosong tanpa arsitek, nilainya muncul ketika seorang developer membangun dengan kode, logika, dan kreativitas. Bagi pemilik domain, menghargai waktu dan keahlian pengkode adalah bagian penting dari terciptanya sebuah karya digital. Dukungan ini bukan kewajiban bagi pengunjung, tetapi bentuk apresiasi bagi pembuatnya.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+
+                        Apa bentuk apresiasi yang dapat diberikan?
+
+                        <span>+</span>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>Apresiasi bukan sekadar angka yang diberikan, tetapi bentuk penghargaan terhadap waktu, pemikiran, dan keahlian yang telah dituangkan dalam setiap baris kode. Melalui dukungan DANA atau GoPay, Anda ikut menghargai proses panjang di balik sebuah karya digital yang dibangun dengan dedikasi dan tanggung jawab.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+
+                        Apakah donasi ini wajib?
+
+                        <span>+</span>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>Bagi pengunjung, dukungan ini bersifat sukarela. Namun bagi pemilik proyek, menghargai pekerjaan developer adalah bentuk tanggung jawab atas waktu, keahlian, dan kode yang telah mengubah sebuah ide menjadi website yang nyata.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+
+                        Apa yang dilakukan setelah mendapatkan dukungan?
+
+                        <span>+</span>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>Dukungan akan membantu proses pengembangan lanjutan seperti
+                            perbaikan sistem, peningkatan keamanan, optimasi tampilan,
+                            dan pengembangan fitur baru.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+
+                        Siapa yang berhasil membangun kesuksesan melalui website?
+
+                        <span>+</span>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Banyak inovasi besar lahir dari sebuah ide yang diwujudkan melalui teknologi, seperti Mark Zuckerberg dengan Facebook dan Elon Musk melalui berbagai perusahaan digitalnya. Website bukan sekadar tampilan, tetapi aset yang dapat membangun bisnis, memperluas peluang, dan mengubah visi menjadi kenyataan. Seorang developer hadir untuk mengubah ide menjadi solusi digital yang bernilai.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+
+                        Bagaimana Menghasilkan Uang Dari Website?
+
+                        <span>+</span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>Website dapat menjadi aset digital yang menghasilkan, namun membutuhkan
+                            strategi, pembelajaran, dan usaha dari pemiliknya. Developer bertugas
+                            membangun sistem serta teknologi, sedangkan penghasilan, pemasaran, dan
+                            pengelolaan bisnis merupakan tanggung jawab pemilik website.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="payment-section">
+
+            <h2>Metode Pembayaran</h2>
+
+            <p class="payment-desc">Dukungan dapat diberikan melalui dompet digital berikut.
+                Pastikan nama penerima sesuai dengan identitas developer.</p>
+
+            <div class="payment-grid">
+
+                <div class="payment-card">
+
+                    <div class="payment-icon dana">D</div>
+
+                    <div>
+
+                        <h3>DANA</h3>
+
+                        <p class="number">085960306011</p>
+
+                        <span>Samuel Pasaribu</span>
+
+                    </div>
+
+                    <button onclick="copyPayment('085960306011')">Salin Nomor</button>
+
+                </div>
+
+                <div class="payment-card">
+
+                    <div class="payment-icon gopay">G</div>
+
+                    <div>
+
+                        <h3>GoPay</h3>
+
+                        <p class="number">085960306011</p>
+
+                        <span>Samuel Pasaribu</span>
+
+                    </div>
+
+                    <button onclick="copyPayment('085960306011')">Salin Nomor</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <div class="modal" id="donationModal">
+
+        <div class="modal-box">
+
+            <button class="close" id="closeModal" aria-label="Tutup Modal"></button>
+
+            <h2>Form Dukungan</h2>
+
+            <form id="donationForm">
+
+                <input id="name" placeholder="Nama Anda" required>
+
+                <select id="purpose" required>
+
+                    <option value="">
+                        Pilih Tujuan Dukungan
+                    </option>
+
+                    <option>
+                        Apresiasi Website
+                    </option>
+
+                    <option>
+                        Pengembangan Fitur
+                    </option>
+
+                    <option>
+                        Maintenance Sistem
+                    </option>
+
+                    <option>
+                        Dukungan Developer
+                    </option>
+
+                </select>
+
+                <div class="amount-box">
+
+                    <span>Rp</span>
+
+                    <input id="amount" placeholder="0" inputmode="numeric" autocomplete="off" required>
+
+                </div>
+
+                <select id="payment">
+
+                    <option>DANA</option>
+
+                    <option>GoPay</option>
+
+                </select>
+
+                <textarea id="message" placeholder="Pesan untuk Samuel"></textarea>
+
+                <button type="submit">Konfirmasi Pembayaran</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; <span id="currentYear"></span>
+        <a href="https://www.samuelpasaribu.com" target="_blank" rel="noopener noreferrer">
+            samuelpasaribu.com
+        </a>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+
+</body>
+
+</html>
