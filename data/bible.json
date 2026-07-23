@@ -1,0 +1,142 @@
+[
+    {
+        "id":1,
+        "kitab":"Kejadian",
+        "pasal":"1:1",
+        "tema":"Penciptaan",
+        "teks":"Pada mulanya Allah menciptakan langit dan bumi."
+    },
+    {
+        "id":2,
+        "kitab":"Kejadian",
+        "pasal":"1:27",
+        "tema":"Manusia Ciptaan Allah",
+        "teks":"Maka Allah menciptakan manusia itu menurut gambar-Nya, menurut gambar Allah diciptakan-Nya dia; laki-laki dan perempuan diciptakan-Nya mereka."
+    },
+    {
+        "id":3,
+        "kitab":"Kejadian",
+        "pasal":"3:15",
+        "tema":"Janji Keselamatan",
+        "teks":"Aku akan mengadakan permusuhan antara engkau dan perempuan ini, antara keturunanmu dan keturunannya; keturunannya akan meremukkan kepalamu, dan engkau akan meremukkan tumitnya."
+    },
+    {
+        "id":4,
+        "kitab":"Keluaran",
+        "pasal":"14:14",
+        "tema":"Pertolongan Tuhan",
+        "teks":"TUHAN akan berperang untuk kamu, dan kamu akan diam saja."
+    },
+    {
+        "id":5,
+        "kitab":"Ulangan",
+        "pasal":"31:8",
+        "tema":"Penyertaan Allah",
+        "teks":"Sebab TUHAN, Dia sendiri akan berjalan di depanmu, Dia sendiri akan menyertai engkau, Dia tidak akan membiarkan engkau dan tidak akan meninggalkan engkau; janganlah takut dan janganlah patah hati."
+    },
+    {
+        "id":6,
+        "kitab":"Mazmur",
+        "pasal":"23:1",
+        "tema":"Penyertaan Tuhan",
+        "teks":"TUHAN adalah gembalaku, takkan kekurangan aku."
+    },
+    {
+        "id":7,
+        "kitab":"Mazmur",
+        "pasal":"46:2",
+        "tema":"Allah Tempat Perlindungan",
+        "teks":"Allah itu bagi kita tempat perlindungan dan kekuatan, sebagai penolong dalam kesesakan sangat terbukti."
+    },
+    {
+        "id":8,
+        "kitab":"Mazmur",
+        "pasal":"119:105",
+        "tema":"Firman Tuhan",
+        "teks":"Firman-Mu itu pelita bagi kakiku dan terang bagi jalanku."
+    },
+    {
+        "id":9,
+        "kitab":"Amsal",
+        "pasal":"3:5",
+        "tema":"Percaya Kepada Tuhan",
+        "teks":"Percayalah kepada TUHAN dengan segenap hatimu, dan janganlah bersandar kepada pengertianmu sendiri."
+    },
+    {
+        "id":10,
+        "kitab":"Yesaya",
+        "pasal":"41:10",
+        "tema":"Jangan Takut",
+        "teks":"Janganlah takut, sebab Aku menyertai engkau, janganlah bimbang, sebab Aku ini Allahmu; Aku akan meneguhkan, bahkan akan menolong engkau."
+    },
+    {
+        "id":11,
+        "kitab":"Yeremia",
+        "pasal":"29:11",
+        "tema":"Rancangan Allah",
+        "teks":"Sebab Aku ini mengetahui rancangan-rancangan apa yang ada pada-Ku mengenai kamu, demikianlah firman TUHAN, yaitu rancangan damai sejahtera dan bukan rancangan kecelakaan, untuk memberikan kepadamu hari depan yang penuh harapan."
+    },
+    {
+        "id":12,
+        "kitab":"Matius",
+        "pasal":"5:14",
+        "tema":"Menjadi Terang Dunia",
+        "teks":"Kamu adalah terang dunia. Kota yang terletak di atas gunung tidak mungkin tersembunyi."
+    },
+    {
+        "id":13,
+        "kitab":"Matius",
+        "pasal":"6:33",
+        "tema":"Mencari Kerajaan Allah",
+        "teks":"Tetapi carilah dahulu Kerajaan Allah dan kebenarannya, maka semuanya itu akan ditambahkan kepadamu."
+    },
+    {
+        "id":14,
+        "kitab":"Matius",
+        "pasal":"11:28",
+        "tema":"Pengharapan",
+        "teks":"Marilah kepada-Ku semua yang letih lesu dan berbeban berat, Aku akan memberi kelegaan kepadamu."
+    },
+    {
+        "id":15,
+        "kitab":"Yohanes",
+        "pasal":"1:1",
+        "tema":"Firman Allah",
+        "teks":"Pada mulanya adalah Firman; Firman itu bersama-sama dengan Allah dan Firman itu adalah Allah."
+    },
+    {
+        "id":16,
+        "kitab":"Yohanes",
+        "pasal":"3:16",
+        "tema":"Kasih Allah",
+        "teks":"Karena begitu besar kasih Allah akan dunia ini, sehingga Ia telah mengaruniakan Anak-Nya yang tunggal, supaya setiap orang yang percaya kepada-Nya tidak binasa, melainkan beroleh hidup yang kekal."
+    },
+    {
+        "id":17,
+        "kitab":"Yohanes",
+        "pasal":"14:6",
+        "tema":"Yesus Jalan Keselamatan",
+        "teks":"Kata Yesus kepadanya: Akulah jalan dan kebenaran dan hidup. Tidak ada seorangpun yang datang kepada Bapa, kalau tidak melalui Aku."
+    },
+    {
+        "id":18,
+        "kitab":"Roma",
+        "pasal":"3:23",
+        "tema":"Dosa Manusia",
+        "teks":"Karena semua orang telah berbuat dosa dan telah kehilangan kemuliaan Allah."
+    },
+    {
+        "id":19,
+        "kitab":"Roma",
+        "pasal":"6:23",
+        "tema":"Anugerah Keselamatan",
+        "teks":"Sebab upah dosa ialah maut; tetapi karunia Allah ialah hidup yang kekal dalam Kristus Yesus, Tuhan kita."
+    },
+    {
+        "id":20,
+        "kitab":"Roma",
+        "pasal":"8:28",
+        "tema":"Rancangan Allah",
+        "teks":"Kita tahu sekarang, bahwa Allah turut bekerja dalam segala sesuatu untuk mendatangkan kebaikan bagi mereka yang mengasihi Dia."
+    }
+]
